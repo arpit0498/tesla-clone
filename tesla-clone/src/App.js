@@ -4,6 +4,7 @@ import Header from './Header';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import Menu from './Menu';
 import HeaderBlock from './HeaderBlock';
+import Login from './Login';
 
 function App() {
 
@@ -11,10 +12,20 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-        {isMenuOpen && <Menu />}
+        <Switch>
 
-        <HeaderBlock />
+          <Route exact path='/'>
+            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            {isMenuOpen && <Menu />}
+
+            <HeaderBlock />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+
+          </Route>
+        </Switch>
+
       </div>
     </Router>
   );
