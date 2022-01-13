@@ -46,7 +46,6 @@ function App() {
           </Route>
           <Route exact path="/login">
             {user ? <Redirect to='/teslaaccount' /> : <Login />}
-            <Login />
 
           </Route>
           <Route exact path="/signup">
