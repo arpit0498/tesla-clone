@@ -79,3 +79,22 @@
   color: black;
   opacity: 0.8;
 }
+    @media (max-width: 600px)
+    {
+            .headerBlock{ 
+              width: 100vw;
+              height: 100vh;   
+
+            }
+            /* .headerBlock__infoText , .headerBlock__infoText > h4 ,.headerBlock__infoText > h4>span{
+              margin-top: auto;
+              max-resolution: inherit;
+            } */
+            .headerBlock__actions{
+            flex-direction: column;
+            }
+
+    }
+
+
+        

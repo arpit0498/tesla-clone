@@ -34,6 +34,14 @@
     font-weight: 500;
 }
 
+@media only screen and (max-width: 600px) {
+    .header__links > a {
+    display: none;
+}
+    
+}
+
+
 .header__right{
     display: flex;
     align-items: center;
