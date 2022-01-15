@@ -2,6 +2,8 @@
 
  Tesla clone by using React-router, redux and firebase for authentication and email login.
 
+ <a href="https://tesla-clone-cd1f7.web.app/teslaaccount">Live site</a>
+
 
 
 <img src="./Assets/project.gif"> Mobile view and project demo</img>
